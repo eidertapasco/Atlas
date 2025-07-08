@@ -6,12 +6,15 @@
         <meta name="description" content="Proyecto atlas, layout de practica">
         <meta name="robots" content="index,follow">
         <title>Atlas</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> <!--desktop first-->
+        <!-- <link rel="stylesheet" href="css/laptop.css" media="screen and (max-width: 920px)"> -->
+        <!-- <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 768px)"> -->
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 480px)">
     </head>
     <body>
         <header class="header">
             <figure class="header__logo">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/logo.png" alt="Atlas Startup Logo">
                 <span>Get Early Access</span>
             </figure>
             <article class="header__container">
@@ -111,7 +114,7 @@
                         <button class="btn btn__pricing">Get Free</button>
                     </article>
                 </section>
-                <article class="Partners">
+                <article class="partners">
                         <figure class="partners__list">
                             <img src="images/client-1.png" alt="Company1" class="partner__logo">
                             <img src="images/client-2.png" alt="Company2" class="partner__logo">
@@ -138,7 +141,7 @@
                             <input type="text" id="name" placeholder="Eider..." autocomplete="name" required>
                         </div>
                         <div class="form__group">
-                            <label for="Your Email">Your Email</label>
+                            <label for="email">Your Email</label>
                             <input type="email" id="email" placeholder="eider@sena.com" autocomplete="email" required>
                         </div> 
                     </div>
@@ -156,14 +159,14 @@
         <footer class="footer">
             <section class="footer__container">
                 <p>Copyright &copy; 2025 Eider Tapasco, SENA</p>
-                <ul class="footer__list">
-                    <div class="footer__icon-container">
-                        <li><a href=""><img src="images/facebook-icon.png" alt="Facebook"></a></li>
-                        <li><a href=""><img src="images/twitter-icon.png" alt="Twitter"></a></li>
-                        <li><a href=""><img src="images/instagram-icon.png" alt="Email"></a></li>
-                        <li><a href=""><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
-                    </div>
-                </ul>
+                <div class="footer__icon-container">
+                    <ul class="footer__list">
+                        <li><a href="https://www.facebook.com/soytapasco/?locale=es_LA"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/taepaskoev/"><img src="images/instagram-icon.png" alt="Email"></a></li>
+                        <li><a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
             </section>
         </footer>
     </body>

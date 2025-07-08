@@ -22,6 +22,8 @@ header{
     width: 100%;
     height: 100vh;
     background-image: url("banner-bk.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .header__logo{
@@ -46,16 +48,17 @@ header{
     display: flex;
     flex-direction: column;
     margin: 3% 0 0 7% ;
+    z-index: 1;
 }
 
 .header__title{
-    width: 85%;
     color: var(--text-color);
-    font-size: 7.5rem;
+    font-size: clamp(3rem, 6vw, 6.8rem);
     margin-bottom: 2%;
 }
 
 .header__text{
+    width: 85%;
     color: var(--text-color);
     font-size: 2.5rem;
     margin-bottom: 5%;
@@ -72,7 +75,9 @@ header{
     font-weight: 700;
     background-color: var(--primary-color);
     border: 1px var(--secondary-color) solid;
-    width: 24%; 
+    width: 30%;
+    /* min-width: 150px;
+    max-width: 250px; */
 }
 
 /*------------MAIN--------*/
@@ -113,6 +118,11 @@ header{
     margin-bottom: 10%;
 }
 
+.hero__options img{
+    width: 150px;/*posible eliminada*/
+    height: auto; /*posible eliminada*/
+}
+
 .hero__options h3{
     color: var(--title-color);
     font-size: var(--text-size);
@@ -122,7 +132,7 @@ header{
 
 .hero__options p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 /*--------------FEATURES-------------*/
@@ -164,11 +174,17 @@ header{
   width: 50%;
 }
 
+/* .features__img img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
 .btn-features{
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 700;
-    width: 25%;
+    width: 30%;
     background-color: var(--secondary-color);
     border: 1px var(--secondary-color) solid;
 }
@@ -197,7 +213,8 @@ header{
 
 .pricing__card{
     text-align: center;
-    width: 25%;
+    width: 28%; /*25*/
+    max-width: 400px; /*puede eliminarse*/
 }
 
 .pricing__card h3{
@@ -270,12 +287,16 @@ header{
 }
 
 .partner__logo{
+    max-width: 120px;
+    height: auto;
     margin: 3% 0;
 }
 
 /*------------------- SECTION FORMULARIO --------------------*/
 .form__contact{
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
     background-image: url("./contact-bk.jpg");
     color: var(--white-back-color);
     padding: 10% 10%; /*60px 10%*/
@@ -335,7 +356,7 @@ header{
     border-radius: 6px;
     background-color: transparent;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .form__group input::placeholder,
@@ -360,7 +381,7 @@ header{
 }
 
 .form__submit button:hover{
-    background-color: var(--primary-color);
+    background-color: var(--white-back-color);
 }
 
 .full-width{
@@ -372,12 +393,13 @@ header{
 .footer{
     width: 100%;
     padding: 3% 5%;
-    background-color: yellowgreen;
+    background-color: var(--secondary-color);
 }
 
 .footer__container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer__container p{
@@ -387,25 +409,35 @@ header{
 
 .footer__list{
     width: 50%;
-    background-color: red;
     display: flex;
-    
+    justify-content: end;
 }
 
 .footer__list li{
-    list-style: none;
-    background-color: aqua;
+    width: 5rem;
+    height: 5rem;
+    /* list-style: none; */
+    background-color: var(--white-back-color);
     border-radius: 50%;
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /*para que el circulo no se encoja*/
+    flex-grow: 0; /*para que el circulo no se expanda*/
 }
 
 .footer__list img{
-    width: 50%;
-}
-/*
-.footer__list a{
-    text-decoration: ;
-    background-color: aqua;
-    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
 }
 
- */
+.footer__list a{
+    text-decoration: none;
+}
+
+.footer__list a:hover img{
+    transform: scale(1.2); /*aumenta el tamaño de un elemento a 1.2 veces su tamaño original, tanto en ancho como en alto*/
+    transition: transform 0.3s ease;
+}
