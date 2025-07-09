@@ -1,0 +1,101 @@
+@media (min-width: 921px) and (max-width: 1279px) {
+  .hero__container,
+  .features__container,
+  .pricing__container,
+  .form__fields {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .header__title {
+    font-size: 5rem;
+  }
+
+  .header__text {
+    font-size: 2.2rem;
+  }
+
+  .btn-header {
+    width: 30%;
+    font-size: 1.8rem;
+  }
+
+  .hero__container {
+    width: 95%;
+    margin: 0 auto;
+    gap: 2rem;
+    overflow-x: hidden;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__options {
+    padding: 2%;
+  }
+
+  .hero__options img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .features__container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__description {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .features__img {
+    width: 45%;
+  }
+
+  .btn-features {
+    width: 40%;
+  }
+
+  .pricing__container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .pricing__card {
+    width: 28%;
+  }
+
+  .partners__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .partner__logo {
+    width: 15%;
+  }
+
+  .form__contact {
+    padding: 5rem 2rem;
+    flex-direction: row;
+  }
+
+  .form__information {
+    width: 40%;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .footer__list {
+    justify-content: flex-end;
+  }
+}

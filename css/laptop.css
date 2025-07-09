@@ -1,0 +1,138 @@
+@media(max-width: 920px){
+    /* HEADER */
+    .header {
+        height: auto;
+        padding: 3rem 2rem 8rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header__logo {
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .header__container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .header__text {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .btn-header {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+    }
+
+    /* HERO */
+    .hero__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .hero__options {
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+        margin: 6% 5% 0;
+    }
+
+    /* FEATURES */
+    .features__container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .features__description {
+        width: 100%;
+        margin-bottom: 3rem;
+        order: 2;
+    }
+
+    .features__img {
+        width: 100%;
+        order: 1;
+    }
+
+    .features__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-features {
+        display: block;
+        margin: 2rem auto 0;
+        width: 50%;
+        font-size: 1.6rem;
+        padding: 1.5rem 0;
+    }
+
+    /* PRICING */
+    .pricing__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__card {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    /* PARTNERS */
+    .partners {
+        padding: 0 2rem;
+        background-color: #eceeef;
+    }
+
+    .partners__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .partner__logo {
+        width: 30%;
+        height: auto;
+    }
+
+     /* FOOTER */
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer__list {
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer__list li {
+        margin: 0 1.5rem;
+    }
+
+    .footer__list img {
+        width: 3rem;
+    }
+
+    .footer__container p {
+        font-size: 1.8rem;
+    }
+}

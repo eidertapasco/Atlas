@@ -1,0 +1,208 @@
+@media(min-width:481px) and (max-width: 768px){
+    .header{
+        height: auto;
+        padding: 4rem 4rem 10rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header__logo{
+        margin: 2rem auto;
+        justify-content: center;
+    }
+
+    .header__logo img {
+        width: 10rem;
+    }
+
+    .header__logo span {
+        font-size: 1.6rem;
+    }
+
+    .header__container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__title {
+        font-size: 4.5rem;
+    }
+
+    .header__text {
+        width: 100%;
+        font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .btn-header {
+        width: 50%;
+        padding: 2rem 0;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    /* HERO */
+    .hero__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    .hero__options {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .hero__title {
+        font-size: 3.8rem;
+        margin: 8% 5% 3%;
+    }
+
+    /* FEATURES */
+    .features__container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .features__description {
+        width: 100%;
+        margin-bottom: 3rem;
+        order: 2;
+    }
+
+    .features__img {
+        width: 100%;
+        order: 1;
+    }
+
+    .features__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-features {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        font-size: 1.8rem;
+        padding: 1.8rem 0;
+    }
+
+    /* PRICING CARDS */
+    .pricing__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__card {
+        width: 80%;
+        margin-bottom: 3rem;
+        background-color: var(--secondary-color);
+    }
+
+    .pricing__card h3,
+    .pricing__card p,
+    .pricing__card ul{
+        color: var(--text-color);
+    }
+
+    /* PARTNERS */
+    .Partners {
+        padding: 4rem 4rem;
+    }
+
+    .partners__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .partner__logo {
+        width: 25%;
+        height: auto;
+    }
+
+    /* FORMULARIO */
+    .form__contact {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 5rem 4rem;
+        background-size: cover;
+    }
+
+    .form__information {
+        text-align: center;
+    }
+
+    .form__information h3 {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .form__information p,
+    .form__information li {
+        font-size: 1.8rem;
+    }
+
+    .form__row {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .form__group {
+        width: 100%;
+    }
+
+    .form__group label {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form__group input,
+    .form__group textarea {
+        width: 100%;
+        font-size: 1.7rem;
+        padding: 1.5rem;
+    }
+
+    .form__submit button {
+        width: 50%;
+        font-size: 2rem;
+        padding: 1.8rem 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* FOOTER */
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer__list {
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer__list li {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .footer__list img {
+        width: 3rem;
+    }
+
+    .footer__container p {
+        font-size: 2rem;
+    }
+}
