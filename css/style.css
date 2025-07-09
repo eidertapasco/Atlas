@@ -5,7 +5,6 @@
     --white-back-color: #FFFFFF;
     --title-color: #000000;
     --text-size: 2rem;
-    
 }
 
 *{
@@ -21,7 +20,7 @@ html, body{
 }
 
 html{
-    font-size: 62.5%; /*Para valor de 1 rem = 10px*/
+    font-size: 62.5%; /*1rem = 10px*/
 }
 
 header{
@@ -85,15 +84,13 @@ header{
     background-color: var(--primary-color);
     border: 1px var(--secondary-color) solid;
     width: 30%;
-    /* min-width: 150px;
-    max-width: 250px; */
 }
 
 /*------------MAIN--------*/
 
 .main{
     width: 100%;
-    min-height: 100vh; /*pendiente, no debe de ir*/
+    min-height: 100vh;
 }
 
 /*--------SECTION HERO-----------*/
@@ -105,7 +102,7 @@ header{
 .hero__title{
     color: var(--title-color);
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -128,8 +125,8 @@ header{
 }
 
 .hero__options img{
-    width: 150px;/*posible eliminada*/
-    height: auto; /*posible eliminada*/
+    width: 150px;
+    height: auto;
 }
 
 .hero__options h3{
@@ -183,12 +180,6 @@ header{
   width: 50%;
 }
 
-/* .features__img img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
-
 .btn-features{
     color: var(--text-color);
     font-size: 1.5rem;
@@ -206,7 +197,7 @@ header{
 
 .pricing__main-title{
     color: var(--title-color);
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     text-align: center;
     margin-bottom: 2%;
@@ -223,7 +214,7 @@ header{
 .pricing__card{
     text-align: center;
     width: 28%; /*25*/
-    max-width: 400px; /*puede eliminarse*/
+    max-width: 400px; 
 }
 
 .pricing__card h3{
@@ -284,7 +275,7 @@ header{
 
 
 /*------------ SECTION PARTNERS -------------*/
-.Partners{
+.partners{
     width: 100%;
     height: 100%;
     background-color: #eceeef;
@@ -304,8 +295,6 @@ header{
 /*------------------- SECTION FORMULARIO --------------------*/
 .form__contact{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     background-image: url("./contact-bk.jpg");
     color: var(--white-back-color);
     padding: 10% 10%; /*60px 10%*/
@@ -425,7 +414,6 @@ header{
 .footer__list li{
     width: 5rem;
     height: 5rem;
-    /* list-style: none; */
     background-color: var(--white-back-color);
     border-radius: 50%;
     margin-left: 2.5rem;
@@ -451,6 +439,7 @@ header{
     transition: transform 0.3s ease;
 }
 
+/*Corrige el ancho de las imagenes para que no genere desbordamiento*/
 img,
 iframe,
 video {
